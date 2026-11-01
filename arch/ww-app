@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+source /opt/weaselway/libexec/environment
+systemctl --user is-active --quiet plasma-kwin_wayland.service || { echo 'Start the Weaselway KDE session first.' >&2; exit 1; }
+unset WAYLAND_DISPLAY DISPLAY XAUTHORITY
+while IFS='=' read -r key value; do
+ case "$key" in WAYLAND_DISPLAY|DISPLAY|XAUTHORITY) export "$key=$value";; esac
+done < <(systemctl --user show-environment)
+exec "$@"

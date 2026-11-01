@@ -1,0 +1,10 @@
+{
+  "weaselway": "d70a6344f04bf516b4596860a1321d5fdf06a377",
+  "mesa": "e2008be3fa70d4b6e2cc519abb3dfabb58d1e169",
+  "dxgdrm": "v1.2.1",
+  "freerdp": "v1.2.0rc1",
+  "kernel": "6.18.54.1-microsoft-standard-WSL2",
+  "packages": ["kwin 6.8.2-1", "plasma-desktop 6.8.2-1", "freerdp 2:3.32.2-1", "mesa 1:26.2.6-1"],
+  "dxgdrm_sha256": "23f7f42ebeb468e1da4cf60cc89a02cc1dba47607d9821c939a45873b002e42c",
+  "viewer_sha256": "4a3066d6499eccf07b09c0aeb4524c84de677d8426886bafb1d874dc736adb66"
+}
